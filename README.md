@@ -8,6 +8,7 @@ También controla una tira led WS2812B para decorar el proceso o indicar estados
 Genera entidades MQTT en Home Assistant para el control de la puerta automática y de una tira LED que se utiliza como indicador de estado.
 
 ## Requisitos
+- ESP32 (No funciona con ESP8266)
 - Home Assistant
 - Addon MQTT
 - [Robot aspirador integrado en Home Assistant](https://youtu.be/oR-j6311Xrc)
