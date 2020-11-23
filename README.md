@@ -8,10 +8,17 @@ También controla una tira led WS2812B para decorar el proceso o indicar estados
 Genera entidades MQTT en Home Assistant para el control de la puerta automática y de una tira LED que se utiliza como indicador de estado.
 
 ## Requisitos
-- ESP32 (No funciona con ESP8266)
-- Home Assistant
-- Addon MQTT
-- [Robot aspirador integrado en Home Assistant](https://youtu.be/oR-j6311Xrc)
+
+- ESP32 (No funciona con ESP8266).
+- Home Assistant.
+- Addon MQTT.
+- [Robot aspirador integrado en Home Assistant](https://youtu.be/oR-j6311Xrc).
+
+## Materiales
+
+- 2x [Servomotores](https://amzn.to/399qmeb) de alto torque.
+- 1x [ESP32 Dev Kit](https://amzn.to/2J6Xpo1).
+- 1x [Tira LED WS2812B](https://amzn.to/2V74vvT) (16 LEDs). Opcional.
 
 ## Instalación
 
@@ -41,6 +48,7 @@ Abre la aplicación y pulsa "Developer Mode" y luego en "ESP32 DownloadTool".
 En la configuración del dispositivo, pulsa "Firmware update" que encontrarás en la parte inferior. Debes cargar el último archivo bin de la sección de [Releases](https://github.com/fjramirez1987/Robochera/releases). Robochera_vx.x.x_update.bin.
 
 ## Configuración
+
 Cuando se graba por primera vez en el ESP32 el firmware, se genera un punto de acceso "Robochera". La contraseña de acceso es:
 
     password: robochera32 
