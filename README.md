@@ -40,12 +40,21 @@ Abre la aplicación y pulsa "Developer Mode" y luego en "ESP32 DownloadTool".
 8. Cuando ponga FINISH puedes pulsar en STOP.
 9. ¡LISTO!
 
+<center>
 
 ![](images/Flash_Download_Tools.jpg)
+
+<center>
 
 ### Actualización
 
 En la configuración del dispositivo, pulsa "Firmware update" que encontrarás en la parte inferior. Debes cargar el último archivo bin de la sección de [Releases](https://github.com/fjramirez1987/Robochera/releases). Robochera_vx.x.x_update.bin.
+
+<center>
+
+![](images/update.jpg)
+
+<center>
 
 ## Configuración
 
@@ -57,9 +66,24 @@ Debes conectarte a ese punto de acceso, y automáticamente se abrirá el navegad
 
 Se requiere que cambies la contraseña por defecto del punto de acceso por una propia. Ademas, necesitas configurar los parámetros de tu red wifi y MQTT.
 
-Una vez finalizes esta configuración, pulsa en guardar y conéctate a tu red wifi. El ESP32 se debe conectar a tu red wifi automáticamente.
+Una vez finalices esta configuración, pulsa en guardar y conéctate a tu red wifi. El ESP32 se debe conectar a tu red wifi automáticamente.
 
 Puedes volver a esta configuración en cualquier momento accediendo a la IP del ESP32. Los datos de acceso son:
 
     usuario: admin
     password: "La configurada como AP password"
+
+## Integrar en Home Assistant
+
+De forma automática cuando se inicia el dispositivo Robochera se añaden a Home Assistant las entidades:
+
+- Robochera Door
+- Robochera Light
+
+Debes poder verla en Integraciones -> MQTT -> Dispositivos -> Robochera
+
+En el caso contrario, puedes añadir estas integraciones abriendo la dirección web:
+
+    http://"IP_Robochera"/add
+
+Se requiere que tengas instalado y configurado un servidor MQTT.
