@@ -7,6 +7,10 @@ También controla una tira led WS2812B para decorar el proceso o indicar estados
 
 Genera entidades MQTT en Home Assistant para el control de la puerta automática y de una tira LED que se utiliza como indicador de estado.
 
+## Tutorial
+
+[![Tutorial](https://img.youtube.com/vi/DXyp1pcbNR8/0.jpg)](https://www.youtube.com/watch?v=DXyp1pcbNR8)
+
 ## Requisitos
 
 - ESP32 (No funciona con ESP8266).
@@ -19,6 +23,17 @@ Genera entidades MQTT en Home Assistant para el control de la puerta automática
 - 2x [Servomotores](https://amzn.to/399qmeb) de alto torque.
 - 1x [ESP32 Dev Kit](https://amzn.to/2J6Xpo1).
 - 1x [Tira LED WS2812B](https://amzn.to/2V74vvT) (16 LEDs). Opcional.
+- 2x Bisagras.
+- 2x Brazos para empujar la puerta.
+
+## Esquema eléctrico
+Hay varias alternativas para alimentar los dispositivos. Yo he utilizado 2 reguladores para alimentar con 6v los servos y otro con 5v para el ESP32 y la tira LED. Los servos pueden alimentarse a 6v para generar mayor fuerza. 
+
+![](images/esquema_2reguladores.png)
+
+Pero puede ser también válida la siguiente instalación:
+
+![](images/esquema_SIN_reguladores.png)
 
 ## Instalación
 
@@ -40,21 +55,14 @@ Abre la aplicación y pulsa "Developer Mode" y luego en "ESP32 DownloadTool".
 8. Cuando ponga FINISH puedes pulsar en STOP.
 9. ¡LISTO!
 
-<center>
-
 ![](images/Flash_Download_Tools.jpg)
-
-<center>
 
 ### Actualización
 
 En la configuración del dispositivo, pulsa "Firmware update" que encontrarás en la parte inferior. Debes cargar el último archivo bin de la sección de [Releases](https://github.com/fjramirez1987/Robochera/releases). Robochera_vx.x.x_update.bin.
 
-<center>
-
 ![](images/update.jpg)
 
-<center>
 
 ## Configuración
 
