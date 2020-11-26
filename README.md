@@ -23,6 +23,8 @@ Genera entidades MQTT en Home Assistant para el control de la puerta automática
 - 2x [Servomotores](https://amzn.to/399qmeb) de alto torque.
 - 1x [ESP32 Dev Kit](https://amzn.to/2J6Xpo1).
 - 1x [Tira LED WS2812B](https://amzn.to/2V74vvT) (16 LEDs). Opcional.
+- 2x [Reguladores LM2596](https://amzn.to/2V7blBq).
+- 1x [Fuente de alimentación 12v](https://amzn.to/36b7fyg).
 - 2x Bisagras.
 - 2x Brazos para empujar la puerta.
 
